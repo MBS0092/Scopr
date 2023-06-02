@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "507937268493",
+    "project_id": "scopr-b12c2",
+    "storage_bucket": "scopr-b12c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507937268493:android:23e1e62aad3da3f4070644",
+        "android_client_info": {
+          "package_name": "com.scoprofficial.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507937268493-5k0kge9cgjhdu3fohmr8i6lq5csc55mf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1m1ggy3nixFX2UoNxOAOaC2NpEovU7dE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507937268493-5k0kge9cgjhdu3fohmr8i6lq5csc55mf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "507937268493-ol7tfb7vldthbdlnrj5oejqc3jppin0e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.scoprOfficial.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

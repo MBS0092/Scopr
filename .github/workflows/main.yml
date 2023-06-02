@@ -1,0 +1,38 @@
+# on:
+#   pull_request:
+#     branches:
+#       - main
+#       - master
+#   push:
+#     branches:
+#       - main
+#       - master
+#       - develop
+# name: "Build & Release"
+# jobs:
+#   build:
+#     name: Build & Release
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: actions/setup-java@v1
+#         with:
+#           java-version: '12.x'
+#       - uses: subosito/flutter-action@v1
+#         with:
+#           #flutter-version: '2.10.5'
+#           channel: "stable"
+#       - run: flutter pub get
+#       - run: flutter build apk
+#       #- run: flutter build appbundle
+#       # -  run: flutter build web --web-renderer canvaskit --release 
+#       # - uses: vimtor/action-zip@v1
+#       #   with:
+#       #     files: build/web
+#       #     dest: build/web.zip
+#       - name: Push to Releases
+#         uses: ncipollo/release-action@v1
+#         with:
+#           artifacts: "build/app/outputs/flutter-apk/*,build/app/outputs/bundle/release/*,build/web.zip"
+#           tag: v1.0.${{ github.run_number }}
+#           token: ${{ secrets.TOKEN }}
